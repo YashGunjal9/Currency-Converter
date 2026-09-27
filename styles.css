@@ -1,0 +1,263 @@
+:root {
+  --primary-color: #00a8ff;
+  --secondary-color: #9c88ff;
+  --background-color: #192a56;
+  --text-color: #000000;
+  --glass-background: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.2);
+}
+
+/* BODY */
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(0, 168, 255, 0.2) 0%,
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      rgba(156, 136, 255, 0.2) 0%,
+      transparent 30%
+    );
+}
+
+/* MAIN CONTAINER */
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  padding: 2rem;
+}
+
+/* HEADING */
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px rgba(0, 168, 255, 0.5);
+}
+
+/* DESCRIPTION */
+
+.app-description {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: var(--secondary-color);
+}
+
+/* CONVERTER CARD */
+
+.converter-card {
+  background: var(--glass-background);
+  border-radius: 15px;
+  padding: 2rem;
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border: 1px solid var(--glass-border);
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* INPUT GROUP */
+
+.input-group {
+  width: calc(50% - 0.5rem);
+  margin-bottom: 1.5rem;
+}
+
+/* LABELS */
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--secondary-color);
+}
+
+/* INPUT & SELECT */
+
+input,
+select {
+  width: 100%;
+  padding: 0.75rem;
+
+  border: 1px solid var(--glass-border);
+  border-radius: 5px;
+
+  background: rgba(255, 255, 255, 0.1);
+
+  /* Text inside the closed input/select */
+  color: #ffffff;
+
+  font-size: 1rem;
+
+  box-sizing: border-box;
+}
+
+/* INPUT PLACEHOLDER */
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* SELECT DROPDOWN OPTIONS */
+
+/* Text inside the opened dropdown panel */
+select option {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* Currently selected option */
+select option:checked {
+  color: #ffffff;
+  background-color: #1976d2;
+}
+
+/* FOCUS */
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+/* BUTTON */
+
+button {
+  width: 100%;
+  padding: 1rem;
+
+  background: var(--primary-color);
+  color: #ffffff;
+
+  border: none;
+  border-radius: 5px;
+
+  font-size: 1rem;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0097e6;
+}
+
+/* RESULT */
+
+#result {
+  width: 100%;
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* CURRENCY ICON */
+
+.currency-icon {
+  margin-right: 0.5rem;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+
+  font-size: 0.9rem;
+  color: var(--glass-border);
+}
+
+/* TOGGLE CONTAINER */
+
+.toggle-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+/* TOGGLE BUTTON */
+
+.toggle-btn {
+  background: var(--glass-background);
+
+  border: 1px solid var(--glass-border);
+
+  color: #ffffff;
+
+  padding: 0.5rem 1rem;
+
+  cursor: pointer;
+
+  transition: background-color 0.3s ease;
+}
+
+.toggle-btn:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.toggle-btn:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.toggle-btn.active {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+#exchange-rates {
+  width: 100%;
+  margin-top: 1.5rem;
+  color: #ffffff;
+}
+
+#exchange-rates h2,
+#exchange-rates h3,
+#exchange-rates p,
+#exchange-rates li,
+#exchange-rates div,
+#exchange-rates span {
+  color: #ffffff;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .converter-card {
+    padding: 1.5rem;
+  }
+
+  .input-group {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
