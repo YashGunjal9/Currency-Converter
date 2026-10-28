@@ -4,19 +4,11 @@
 
 ### 🌍 Real-Time Currency Conversion at Your Fingertips
 
-A modern currency converter with a beautiful dark interface, glassmorphism design, and exchange-rate functionality.
+A modern currency converter featuring a beautiful dark interface, glassmorphism effects, and exchange-rate functionality.
 
 <br>
 
-## 🖥️ Application Preview
-
-### 💱 Currency Converter
-
-![GlassFX Currency Converter](Screenshots/Covert%20Page.png)
-
-### 📈 Exchange Rates
-
-![GlassFX Exchange Rates](Screenshots/Exchange-Rates.png)
+![Currency Converter](Screenshots/Covert%20Page.png)
 
 <br>
 
@@ -25,43 +17,53 @@ A modern currency converter with a beautiful dark interface, glassmorphism desig
 ![GitHub stars](https://img.shields.io/github/stars/YashGunjal9/Currency-Converter?style=for-the-badge\&color=00c853)
 ![GitHub forks](https://img.shields.io/github/forks/YashGunjal9/Currency-Converter?style=for-the-badge\&color=ff9800)
 
+**Convert currencies. Explore exchange rates. Experience GlassFX.**
+
 </div>
 
 ---
 
 ## 📌 About the Project
 
-**GlassFX Currency Converter** is a web application that allows users to convert amounts between different currencies and retrieve exchange-rate information through a simple, modern interface.
+**GlassFX Currency Converter** is a web application that allows users to convert amounts between different currencies and retrieve exchange-rate information through a modern, user-friendly interface.
 
-The project combines interactive JavaScript functionality with an attractive dark-themed design.
+The project combines interactive JavaScript functionality with a visually appealing dark theme, cyan accents, and glassmorphism-inspired styling.
 
 ## ✨ Features
 
-* 💱 Currency conversion between selected currencies.
-* 🌍 Multiple currency selection options.
-* 📈 Exchange-rate retrieval for a selected base currency.
-* 🔄 Easy currency selection using dropdown menus.
-* 🎨 Modern glassmorphism interface.
-* 🌙 Dark theme with cyan and purple accents.
-* 📱 Responsive user interface.
-* ⚡ Simple and interactive controls.
-* ⚠️ Error handling for unsuccessful API requests.
+* 💱 **Currency Conversion** — Convert amounts between selected currencies.
+* 🌍 **Multiple Currencies** — Select source and target currencies.
+* 📈 **Exchange Rates** — Retrieve exchange-rate information for a selected base currency.
+* 🔄 **Interactive Controls** — Select currencies using dropdown menus.
+* 🎨 **Glassmorphism UI** — Modern design with translucent elements.
+* 🌙 **Dark Theme** — Elegant dark blue background with cyan and purple accents.
+* 📱 **Responsive Design** — Designed to adapt to different screen sizes.
+* ⚡ **Simple Interface** — Easy-to-use conversion controls.
+* ⚠️ **Error Handling** — Display feedback when an API request fails.
 
 ---
 
-## 🖼️ Screenshots
+## 🖥️ Project Screenshots
 
-### 1. Currency Converter Dashboard
+### 💱 1. Currency Converter
 
-Enter an amount, select the source and target currencies, and convert.
+Convert currencies by entering an amount and selecting the source and target currencies.
 
-![Currency Converter Dashboard](Screenshots/Covert%20Page.png)
+<div align="center">
 
-### 2. Exchange Rates Dashboard
+![GlassFX Currency Converter Dashboard](Screenshots/Covert%20Page.png)
 
-Retrieve exchange rates using your selected base currency.
+</div>
 
-![Exchange Rates Dashboard](Screenshots/Exchange-Rates.png)
+### 📈 2. Exchange Rates
+
+Retrieve exchange-rate information for your selected base currency.
+
+<div align="center">
+
+![GlassFX Exchange Rates Dashboard](Screenshots/Exchange-Rate-Page.png)
+
+</div>
 
 ---
 
@@ -72,9 +74,9 @@ Retrieve exchange rates using your selected base currency.
 | HTML5             | Website structure                       |
 | CSS3              | Styling, layout, and visual effects     |
 | JavaScript        | Currency conversion and API integration |
-| Exchange Rate API | Exchange-rate data                      |
+| Exchange Rate API | Exchange-rate data retrieval            |
 
-*The API name should be updated if your project uses a different provider.*
+*The API name should match the provider used in your actual JavaScript code.*
 
 ---
 
@@ -85,7 +87,7 @@ Currency-Converter/
 │
 ├── Screenshots/
 │   ├── Covert Page.png
-│   └── Exchange-Rates.png
+│   └── Exchange-Rate-Page.png
 │
 ├── index.html
 ├── styles.css
@@ -99,78 +101,94 @@ Currency-Converter/
 
 ### Prerequisites
 
-* Google Chrome or another modern web browser.
+Before running the project, make sure you have:
+
+* A modern web browser, such as Google Chrome.
 * An internet connection for exchange-rate API requests.
 * Visual Studio Code (optional).
 
 ### Installation
 
-**1. Clone the repository**
+**Step 1: Clone the repository**
 
 ```bash
 git clone https://github.com/YashGunjal9/Currency-Converter.git
 ```
 
-**2. Navigate to the project folder**
+**Step 2: Navigate to the project directory**
 
 ```bash
 cd Currency-Converter
 ```
 
-**3. Run the application**
+**Step 3: Open the project**
 
-Open `index.html` in your browser, or use the Live Server extension in Visual Studio Code.
+Open the project folder in Visual Studio Code.
 
-**4. Convert currencies**
+**Step 4: Run the application**
 
-1. Enter the amount.
-2. Select the source currency.
-3. Select the target currency.
+Open `index.html` in your browser or use the Live Server extension in Visual Studio Code.
+
+**Step 5: Convert currencies**
+
+1. Enter the amount you want to convert.
+2. Select the source currency in the **From** dropdown.
+3. Select the target currency in the **To** dropdown.
 4. Click **Convert**.
-5. Open **Exchange Rates** to retrieve rates for the selected base currency.
+5. Open the **Exchange Rates** tab to retrieve rates for the selected base currency.
 
 ---
 
 ## 🔌 Exchange Rate API
 
-The application uses an exchange-rate API to retrieve currency data.
+The application uses an exchange-rate API to retrieve currency information.
 
-If your project uses ExchangeRate-API's Open Access service, refer to its official documentation:
+If your project uses ExchangeRate-API's Open Access service, you can consult its documentation:
 
-[ExchangeRate-API Documentation](https://www.exchangerate-api.com/docs/free)
+**[ExchangeRate-API Documentation](https://www.exchangerate-api.com/docs/free)**
 
-API availability and update frequency depend on the provider.
+API availability, supported currencies, request limits, and update frequency depend on the selected provider.
 
 ---
 
 ## 🎯 Project Objectives
 
-* Develop an interactive currency converter.
+* Develop an interactive currency converter using web technologies.
 * Practise HTML, CSS, and JavaScript.
-* Integrate an external API.
-* Build a modern and responsive user interface.
-* Handle API responses and errors.
+* Integrate an external API into a web application.
+* Create an attractive and user-friendly interface.
+* Handle API responses and network errors.
+* Improve front-end development and problem-solving skills.
 
 ---
 
 ## 🔮 Future Enhancements
 
-* Add a swap-currencies button.
-* Add conversion history.
-* Display currency symbols automatically.
-* Add interactive exchange-rate charts.
-* Support additional currencies.
-* Improve loading indicators and error messages.
+* 🔄 Add a swap-currencies button.
+* 🕘 Maintain a conversion history.
+* 📊 Display interactive exchange-rate charts.
+* 💰 Display currency symbols automatically.
+* 🌐 Support additional currencies.
+* ⚡ Improve loading indicators and error messages.
+* 📱 Further enhance the mobile experience.
 
 ---
 
 ## 👨‍💻 Developer
 
-**Yash Gunjal**
+<div align="center">
 
-GitHub Profile: [@YashGunjal9](https://github.com/YashGunjal9)
+### Yash Gunjal
 
-Project Repository: [Currency-Converter](https://github.com/YashGunjal9/Currency-Converter)
+Computer Engineering Student | Web Developer
+
+[![GitHub](https://img.shields.io/badge/GitHub-YashGunjal9-181717?style=for-the-badge\&logo=github)](https://github.com/YashGunjal9)
+
+**Project Repository**
+
+[GlassFX Currency Converter](https://github.com/YashGunjal9/Currency-Converter)
+
+</div>
 
 ---
 
@@ -178,8 +196,8 @@ Project Repository: [Currency-Converter](https://github.com/YashGunjal9/Currency
 
 ### ⭐ Enjoying this project?
 
-**Give the repository a star on GitHub!**
+If you find this project useful, consider giving the repository a star!
 
-Built with 💙 using HTML, CSS, and JavaScript.
+**Built with 💙 using HTML, CSS, and JavaScript.**
 
 </div>
